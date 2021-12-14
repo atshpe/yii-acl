@@ -51,8 +51,24 @@ $config = [
             ],
         ],
         */
+        // 'view' => [
+        //     'class' => 'app\components\View',
+        // ],
     ],
     'params' => $params,
+    'bootstrap' => [
+        'home'
+        //  => [
+        //     'class' => app\modules\home\Module::class,
+        // ],
+    ],
+    // 'controllerNamespace' => 'app\modules\home\controllers',
+    // 'controllerNamespace' => 'app\modules\home\controllers',
+    'modules' => [
+        'home' => [
+            'class' => app\modules\home\Module::class,
+        ],
+    ],
 ];
 
 if (YII_ENV_DEV) {

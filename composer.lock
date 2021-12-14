@@ -1977,12 +1977,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FakerPHP/Faker.git",
-                "reference": "b85e9d44eae8c52cca7aa0939483611f7232b669"
+                "reference": "9470ee2b00fea0fb5dba88675daffb68839a71a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/b85e9d44eae8c52cca7aa0939483611f7232b669",
-                "reference": "b85e9d44eae8c52cca7aa0939483611f7232b669",
+                "url": "https://api.github.com/repos/FakerPHP/Faker/zipball/9470ee2b00fea0fb5dba88675daffb68839a71a2",
+                "reference": "9470ee2b00fea0fb5dba88675daffb68839a71a2",
                 "shasum": ""
             },
             "require": {
@@ -2033,9 +2033,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FakerPHP/Faker/issues",
-                "source": "https://github.com/FakerPHP/Faker/tree/v1.17.0"
+                "source": "https://github.com/FakerPHP/Faker/tree/main"
             },
-            "time": "2021-12-05T17:14:47+00:00"
+            "time": "2021-12-13T20:38:23+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -2043,12 +2043,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "53b1962090d84f02980bdfd4cd5c5fe35b54e2a6"
+                "reference": "085fb093e038ab0c4f11da732e89cdd47d7586b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53b1962090d84f02980bdfd4cd5c5fe35b54e2a6",
-                "reference": "53b1962090d84f02980bdfd4cd5c5fe35b54e2a6",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/085fb093e038ab0c4f11da732e89cdd47d7586b0",
+                "reference": "085fb093e038ab0c4f11da732e89cdd47d7586b0",
                 "shasum": ""
             },
             "require": {
@@ -2151,7 +2151,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-06T18:35:34+00:00"
+            "time": "2021-12-13T16:16:06+00:00"
         },
         {
             "name": "myclabs/deep-copy",
@@ -2965,12 +2965,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "1c99710ed1e8edada696c5f14fdf3a7a9d285593"
+                "reference": "ba467f38bfe5f34b0a2cc105820484361ab194ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/1c99710ed1e8edada696c5f14fdf3a7a9d285593",
-                "reference": "1c99710ed1e8edada696c5f14fdf3a7a9d285593",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ba467f38bfe5f34b0a2cc105820484361ab194ac",
+                "reference": "ba467f38bfe5f34b0a2cc105820484361ab194ac",
                 "shasum": ""
             },
             "require": {
@@ -3054,7 +3054,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-29T15:43:59+00:00"
+            "time": "2021-12-13T14:59:11+00:00"
         },
         {
             "name": "psr/container",

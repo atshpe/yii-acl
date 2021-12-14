@@ -17,14 +17,14 @@ class SiteController extends Controller
      */
     public function behaviors()
     {
-        echo '<pre>';var_dump(
-            1
-            // get_class_methods(
-            //     Yii::$app
-            //         // ->getUrlManager()
-            //         // ->getBehaviors()
-            // )
-        );die;
+        // echo '<pre>';var_dump(
+        //     1
+        //     // get_class_methods(
+        //     //     Yii::$app
+        //     //         // ->getUrlManager()
+        //     //         // ->getBehaviors()
+        //     // )
+        // );die;
 
         return [
             'access' => [
