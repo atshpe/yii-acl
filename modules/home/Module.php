@@ -8,7 +8,7 @@ class Module extends \yii\base\Module
     {
         \Yii::setAlias('@app', dirname(dirname(__DIR__)) . '/modules/home');
         // debug(\Yii::$app, true);die;
-        \Yii::$app->setViewPath('/app/modules/home/views');
+        \Yii::$app->setViewPath(dirname(dirname(__DIR__)) . '/modules/home/views');
         parent::init();
     }
 }

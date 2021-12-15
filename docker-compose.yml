@@ -1,9 +1,27 @@
-version: '2'
+version: '3.2'
 services:
-  php:
-    image: yiisoftware/yii2-php:7.4-apache
-    volumes:
-      - ~/.composer-docker/cache:/root/.composer/cache:delegated
-      - ./:/app:delegated
-    ports:
-      - '8000:80'
+    web:
+        image: nginx:1.21.4
+        container_name: yii-nginx
+        volumes:
+            - ./:/var/www/html
+            - ./nginx/templates:/etc/nginx/templates
+        ports:
+            - 8000:8000
+    php:
+        image: php:7.4.26-fpm
+        container_name: yii-php
+        build: .
+        volumes:
+            - ./:/var/www/html
+        expose:
+            - 9000
+        command: bash -c "chown www-data:www-data /var/www/html/web/assets -R && php-fpm"
+    # db:
+    #     image: mariadb:10.5
+    #     container_name: yii-mariadb
+    #     environment:
+    #         MARIADB_ROOT_PASSWORD: yiipass
+    #         MARIADB_DATABASE: yiibase
+    #     ports:
+    #         - 3309:3306
