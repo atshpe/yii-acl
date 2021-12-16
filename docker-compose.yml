@@ -16,7 +16,7 @@ services:
             - ./:/var/www/html
         expose:
             - 9000
-        command: bash -c "chown www-data:www-data /var/www/html/web/assets -R && php-fpm"
+        command: bash -c "chown www-data:www-data /var/www/html/web/assets /var/www/html/runtime -R && php-fpm"
     # db:
     #     image: mariadb:10.5
     #     container_name: yii-mariadb
