@@ -52,20 +52,18 @@ $config = [
         // 'view' => [
         //     'class' => 'app\components\View',
         // ],
+        // 'acl\gate' => app\module\acl\service\GateFactory::class,
     ],
     'params' => $params,
     'bootstrap' => [
-        'home'
-        //  => [
-        //     'class' => app\modules\home\Module::class,
-        // ],
+        'acl',
+        'home',
     ],
     // 'controllerNamespace' => 'app\modules\home\controllers',
     // 'controllerNamespace' => 'app\modules\home\controllers',
     'modules' => [
-        'home' => [
-            'class' => app\modules\home\Module::class,
-        ],
+        'home' => ['class' => app\module\home\Module::class],
+        'acl' => ['class' => app\module\acl\Module::class],
     ],
 ];
 
