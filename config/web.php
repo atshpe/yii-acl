@@ -57,12 +57,12 @@ $config = [
     'params' => $params,
     'bootstrap' => [
         'acl',
-        'home',
+        'main',
     ],
     // 'controllerNamespace' => 'app\modules\home\controllers',
     // 'controllerNamespace' => 'app\modules\home\controllers',
     'modules' => [
-        'home' => ['class' => app\module\home\Module::class],
+        'main' => ['class' => app\module\main\Module::class],
         'acl' => ['class' => app\module\acl\Module::class],
     ],
 ];

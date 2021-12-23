@@ -18,5 +18,14 @@ return [
                 Role::ADMIN,
             ],
         ],
+        [
+            'controller' => 'app\controllers\AdminController',
+            'resources' => [
+                'index',
+            ],
+            'roles' => [
+                Role::ADMIN,
+            ],
+        ],
     ],
 ];
