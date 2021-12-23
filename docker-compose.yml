@@ -8,6 +8,8 @@ services:
             - ./nginx/templates:/etc/nginx/templates
         ports:
             - 8000:8000
+        depends_on:
+            - php
     php:
         image: php:7.4.26-fpm
         container_name: yii-php

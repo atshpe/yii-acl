@@ -1,7 +1,22 @@
 <?php
 
+use acl\model\Role;
+
 return [
-    // 'components' => [
-    //     'acl\gate' => app\module\acl\service\Gate::class,
-    // ],
+    'base' => [
+        [
+            'controller' => 'app\controllers\SiteController',
+            'resources' => [
+                'index',
+                'login',
+                'logout',
+                'contact',
+                'about',
+            ],
+            'roles' => [
+                Role::USER,
+                Role::ADMIN,
+            ],
+        ],
+    ],
 ];
