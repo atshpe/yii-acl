@@ -32,7 +32,7 @@ class Module extends \yii\base\Module
         $identity = (object) [
             'id' => null,
             'username' => null,
-            'role' => 'Admin',
+            'role' => 'DynamicUser',
             'email' => null,
         ];
 

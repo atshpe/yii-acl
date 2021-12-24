@@ -5,7 +5,7 @@ services:
         container_name: yii-nginx
         volumes:
             - ./:/var/www/html
-            - ./nginx/templates:/etc/nginx/templates
+            - ./server/nginx/templates:/etc/nginx/templates
         ports:
             - 8000:8000
         depends_on:
@@ -19,11 +19,13 @@ services:
         expose:
             - 9000
         command: bash -c "chown www-data:www-data /var/www/html/web/assets /var/www/html/runtime -R && php-fpm"
-    # db:
-    #     image: mariadb:10.5
-    #     container_name: yii-mariadb
-    #     environment:
-    #         MARIADB_ROOT_PASSWORD: yiipass
-    #         MARIADB_DATABASE: yiibase
-    #     ports:
-    #         - 3309:3306
+    db:
+        image: mariadb:10.5
+        container_name: yii-mariadb
+        volumes:
+            - ./server/mysql_dump:/home
+        environment:
+            MARIADB_ROOT_PASSWORD: yiipass
+            MARIADB_DATABASE: yii_acl
+        ports:
+            - 3309:3306
