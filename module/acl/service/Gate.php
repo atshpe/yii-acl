@@ -3,7 +3,6 @@
 namespace acl\service;
 
 use acl\model\Role;
-use acl\model\DynamicRoleManager;
 
 class Gate
 {
@@ -32,20 +31,6 @@ class Gate
         
         if ($this->identity) $role = $this->identity->role;
         if (! $this->isRouteMatch()) throw new \Exception(404);
-        
-        $cfg = [
-            'controller' => $this->controller,
-            'actions' => [
-                'index',
-                'about',
-            ],
-            'roles' => [
-                'DynamicUser',
-            ],
-            // 'assertions' => [
-                
-            // ],
-        ];
 
         $resource = $this->getResource();
         if ($resource) {

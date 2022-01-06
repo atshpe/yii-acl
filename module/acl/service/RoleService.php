@@ -35,6 +35,20 @@ class RoleService
         if ($this->hasDynamic($value)) return 'dynamic';
     }
 
+    /* config should look like this */
+    
+    // $cfg = [
+    //     'controller' => $this->controller,
+    //     'actions' => [
+    //         'index',
+    //         'about',
+    //     ],
+    //     'roles' => [
+    //         'DynamicUser',
+    //     ],
+    //     'assertions' => [],
+    // ];
+    
     public function setDynamic(array $config) : void
     {
         if ($this->validateConfig($config)) {
